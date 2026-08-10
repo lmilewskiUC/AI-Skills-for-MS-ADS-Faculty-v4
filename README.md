@@ -1,4 +1,3 @@
-# AI-Skills-for-MS-ADS-Faculty-v4
 <!DOCTYPE html>
 <html lang="en">
 <head>
