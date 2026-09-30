@@ -123,16 +123,24 @@ const data = [
       {
         id: "1.1", name: "Multiple Choice Quizzes in Canvas",
         desc: "Create, import, and manage multiple-choice quizzes in Canvas — including question banks, AI-generated questions, and QTI files to upload directly to Canvas.",
-        startHere: `Claude is a great tool for creating multiple choice quizzes, but it needs specific directions to create strong questions with well-crafted distractors. Below are directions for creating a good set of multiple choice questions from a set of resources that you collect in a folder on your computer. Setting up a Claude Project that's setup to generate multiple choice question banks for your course can save you time. The second activity will demonstrate an easy way to upload the resulting files to Canvas so you don't have to input each answer by hand. In addition to being easier, this also eliminates mistakes from copying and pasting or re-typing materials. This workload grows linearly with the number of sections we teach each quarter.  AI tools can speed and scale these activities.  However, the best method of AI assistance will depend upon the instructor's course load and specific needs.  We describe two options below which might appeal to two different instructor personas.`, tryItOut: [{ t: `Writing Multiple Choice Questions with Claude`, type: `Activity`, url: `https://canvas.uchicago.edu/courses/72214/pages/writing-multiple-choice-quizzes-with-claude?module_item_id=3234019`}, { t: `Uploading a Question Bank to Canvas`, type: `Activity`, url: `https://canvas.uchicago.edu/courses/72214/pages/uploading-a-question-bank-to-canvas?module_item_id=3234020`} ], resources: [{t: `A Refresh on Writing Quality Multiple Choice Questions, University of Michigan`, type: `Article`, url: `https://lsa.umich.edu/technology-services/news-events/all-news/teaching-tip-of-the-week/a-refresh-on-writing-quality-multiple-choice-questions.html`}]
+        startHere: `Claude is a great tool for creating multiple choice quizzes, but it needs specific directions to create strong questions with well-crafted distractors. Below are directions for creating a good set of multiple choice questions from a set of resources that you collect in a folder on your computer. Setting up a Claude Project that's setup to generate multiple choice question banks for your course can save you time. The second activity will demonstrate an easy way to upload the resulting files to Canvas so you don't have to input each answer by hand. In addition to being easier, this also eliminates mistakes from copying and pasting or re-typing materials. This workload grows linearly with the number of sections we teach each quarter.  AI tools can speed and scale these activities.  However, the best method of AI assistance will depend upon the instructor's course load and specific needs.  We describe two options below which might appeal to two different instructor personas.`,
+        tryItOut: [
+          { t: `Writing Multiple Choice Questions with Claude`, type: `Activity`, url: `https://canvas.uchicago.edu/courses/72214/pages/writing-multiple-choice-quizzes-with-claude?module_item_id=3234019` },
+          { t: `Uploading a Question Bank to Canvas`, type: `Activity`, url: `https://canvas.uchicago.edu/courses/72214/pages/uploading-a-question-bank-to-canvas?module_item_id=3234020` }
+        ],
+        resources: [{ t: `A Refresh on Writing Quality Multiple Choice Questions, University of Michigan`, type: `Article`, url: `https://lsa.umich.edu/technology-services/news-events/all-news/teaching-tip-of-the-week/a-refresh-on-writing-quality-multiple-choice-questions.html` }]
       },
       {
         id: "1.2", name: "Locally Manage Your Canvas Site",
         desc: "Work with Canvas content outside the browser — downloading course exports, editing files offline, and using the Canvas API for programmatic updates.",
-        startHere: `Agentic AI seeks to ease our administrative burden and cut through the "busy work", allowing us to focus our energies on the parts of our job which we find rewarding, intriguing, or mission-driven.  As instructors, we perform one particular category of administrative work every quarter: the preparation, management, and revision of our course sites, some of which are hosted through the Canvas learning management system.`, tryItOut: [{ t: "Get A Canvas Access Token", type: "Activity", url: "https://canvas.uchicago.edu/courses/72214/pages/first-youll-need-a-canvas-access-token?module_item_id=3194351" },
-  { t: "Choose Between Two Paths for Managing Your Class", type: "Activity", url: "https://canvas.uchicago.edu/courses/72214/pages/next-choose-between-two-possible-paths?module_item_id=3187615" },
-  { t: "Path 1: Human-in-the-Loop Management of a Single Course", type: "Activity", url: "https://canvas.uchicago.edu/courses/72214/pages/path-1-human-in-the-loop-management-of-a-single-course?module_item_id=3233656" },
-  { t: "Path 2: Automation and Common Tooling Across Several Courses", type: "Activity", url: "https://canvas.uchicago.edu/courses/72214/pages/path-2-automation-and-common-tooling-across-several-courses?module_item_id=3233763" }
-], resources: [{t: `Teaching with Claude at UChicago, Sebastien Donadio`, type: `Case Study`, url: `https://sdonadio.github.io/teaching-with-claude/`}]
+        startHere: `Agentic AI seeks to ease our administrative burden and cut through the "busy work", allowing us to focus our energies on the parts of our job which we find rewarding, intriguing, or mission-driven.  As instructors, we perform one particular category of administrative work every quarter: the preparation, management, and revision of our course sites, some of which are hosted through the Canvas learning management system.`,
+        tryItOut: [
+          { t: "Get A Canvas Access Token", type: "Activity", url: "https://canvas.uchicago.edu/courses/72214/pages/first-youll-need-a-canvas-access-token?module_item_id=3194351" },
+          { t: "Choose Between Two Paths for Managing Your Class", type: "Activity", url: "https://canvas.uchicago.edu/courses/72214/pages/next-choose-between-two-possible-paths?module_item_id=3187615" },
+          { t: "Path 1: Human-in-the-Loop Management of a Single Course", type: "Activity", url: "https://canvas.uchicago.edu/courses/72214/pages/path-1-human-in-the-loop-management-of-a-single-course?module_item_id=3233656" },
+          { t: "Path 2: Automation and Common Tooling Across Several Courses", type: "Activity", url: "https://canvas.uchicago.edu/courses/72214/pages/path-2-automation-and-common-tooling-across-several-courses?module_item_id=3233763" }
+        ],
+        resources: [{ t: `Teaching with Claude at UChicago, Sebastien Donadio`, type: `Case Study`, url: `https://sdonadio.github.io/teaching-with-claude/` }]
       },
       {
         id: "1.3", name: "Style a Canvas Site with HTML Assets",
@@ -147,14 +155,15 @@ const data = [
       {
         id: "1.5", name: "Activities and Labs",
         desc: "Design in-class or online activities and labs, including AI-assisted formats, step-by-step lab guides, and aligned assessment rubrics.",
-        startHere: [], tryItOut: [], resources: [{t: `Chicago Center for Teaching and Learning - Programs and Resources on AI`, type: `Events, Articles, Videos`, url: `https://teaching.uchicago.edu/resources/programming-and-resources-ai`}]
+        startHere: [], tryItOut: [],
+        resources: [{ t: `Chicago Center for Teaching and Learning - Programs and Resources on AI`, type: `Events, Articles, Videos`, url: `https://teaching.uchicago.edu/resources/programming-and-resources-ai` }]
       },
       {
         id: "1.6", name: "Feedback on Class and Materials",
         desc: "Design and analyze mid-semester feedback surveys to surface themes in student responses and improve course delivery.",
         startHere: [], tryItOut: [], resources: []
-      },
-      ]
+      }
+    ]
   },
   {
     domain: "Teach Students About Effective AI Use and Potential Pitfalls", num: "2",
@@ -162,12 +171,15 @@ const data = [
       {
         id: "2.1", name: "Syllabus Statements",
         desc: `Write an AI use policy for your syllabus.`,
-        startHere: `All faculty should include a clear, fair, AI use policy in their syllabus. This should cover permitted tools, citation requirements, academic integrity implications, and the instructor's rationale.`, tryItOut: [{t: `AI Syllabus Statements`, type: `Template`, url: `https://canvas.uchicago.edu/courses/72558/files/15463877?module_item_id=3133071`}], resources: []
+        startHere: `All faculty should include a clear, fair, AI use policy in their syllabus. This should cover permitted tools, citation requirements, academic integrity implications, and the instructor's rationale.`,
+        tryItOut: [{ t: `AI Syllabus Statements`, type: `Template`, url: `https://canvas.uchicago.edu/courses/72558/files/15463877?module_item_id=3133071` }],
+        resources: []
       },
       {
         id: "2.2", name: "Advantages and Pitfalls in Your Discipline",
         desc: "Explain and demonstrate the advantages and pitfalls of AI use within your specific content area, so students can apply tools appropriately in their field.",
-        startHere: [], tryItOut: [], resources: [{t: `Generative AI for Coding, Sebastien Donadio`, type:`Video`, url:`https://canvas.uchicago.edu/courses/72214/pages/genai-for-coding-with-sebastien-donadio`}]
+        startHere: [], tryItOut: [],
+        resources: [{ t: `Generative AI for Coding, Sebastien Donadio`, type: `Video`, url: `https://canvas.uchicago.edu/courses/72214/pages/genai-for-coding-with-sebastien-donadio` }]
       },
       {
         id: "2.3", name: "Professional Work (Presentations, etc.)",
@@ -202,7 +214,11 @@ const data = [
       {
         id: "3.3", name: "Education",
         desc: "Stay informed on AI developments in educational technology and pedagogy — LMS integrations, peer institution policies, and emerging pedagogical frameworks.",
-        startHere: [], tryItOut: [], resources: [{t: `Learning Curve with Jeff Young`, type: `Podcast`, url: `https://learningcurve.fm/`}, {t: `Chicago Center for Teaching and Learning - Programs and Resources on AI`, type: `Events, Articles, Videos`, url: `https://teaching.uchicago.edu/resources/programming-and-resources-ai`}]
+        startHere: [], tryItOut: [],
+        resources: [
+          { t: `Learning Curve with Jeff Young`, type: `Podcast`, url: `https://learningcurve.fm/` },
+          { t: `Chicago Center for Teaching and Learning - Programs and Resources on AI`, type: `Events, Articles, Videos`, url: `https://teaching.uchicago.edu/resources/programming-and-resources-ai` }
+        ]
       }
     ]
   },
@@ -217,12 +233,37 @@ const data = [
       {
         id: "4.2", name: "Tutoring",
         desc: "Deploy AI as a 24/7 Socratic tutor for course content, with prompt templates, student guardrails, and assignment designs that make AI-assisted learning visible.",
-        startHere: [], tryItOut: [], resources: [{t: `How Sebastien Donadio leverages Claude as an Instructional Assistant`, type: `Case study`, url: `https://sdonadio.github.io/teaching-with-claude/#ta-assistant`}]
+        startHere: [], tryItOut: [],
+        resources: [{ t: `How Sebastien Donadio leverages Claude as an Instructional Assistant`, type: `Case study`, url: `https://sdonadio.github.io/teaching-with-claude/#ta-assistant` }]
       },
       {
         id: "4.3", name: "Ethics",
         desc: "Address ethical dimensions of AI in your instructional practice — data privacy, FERPA compliance, transparency with students, and teaching case studies on algorithmic fairness.",
         startHere: [], tryItOut: [], resources: []
+      }
+    ]
+  },
+  {
+    domain: "Additional AI Resources", num: "5",
+    skills: [
+      {
+        id: "5.1", name: "Additional AI Resources",
+        desc: "A curated collection of AI resources for MS-ADS faculty, and a place to share resources with your colleagues.",
+        customSections: [
+          {
+            title: "Resources",
+            items: [
+              { t: `University of Chicago Claude Resources`, type: `Resource`, url: `https://intranet.uchicago.edu/tools-and-resources/tools-and-applications/claude` }
+            ]
+          },
+          {
+            title: "Share a Resource",
+            intro: `YOUR INTRO TEXT HERE`,
+            items: [
+              { t: `Share a Resource — Discussion Board`, type: `Discussion Board`, url: `https://edstem.org/us/courses/107688/discussion/8333315` }
+            ]
+          }
+        ]
       }
     ]
   }
@@ -238,24 +279,47 @@ document.addEventListener('DOMContentLoaded', function() {
     card.className = 'domain-card';
     card.id = `domain-${di}`;
 
-    const trackHTML = domain.skills.map((s) => {
-      return `<div class="skill" onclick="showDetail('${s.id}', event)">
-        <div class="skill-step">${s.id}</div>
-        <div class="skill-name">${s.name}</div>
-      </div>`;
-    }).join('');
+    // Check if this domain has a single skill with customSections — render inline if so
+    const singleCustom = domain.skills.length === 1 && domain.skills[0].customSections;
+
+    let drawerInner;
+    if (singleCustom) {
+      const skill = domain.skills[0];
+      drawerInner = skill.customSections.map((sec, i) => {
+        const introHTML = sec.intro ? `<p style="font-size:15px;line-height:1.75;color:#333;margin-bottom:1rem;">${sec.intro}</p>` : '';
+        const linksHTML = sec.items.map(r => `
+          <a href="${r.url||'#'}" target="_blank" style="display:block;background:#f7f7f5;padding:1rem 1.25rem;border-radius:6px;text-decoration:none;color:#800000;font-weight:600;font-size:14px;margin-bottom:0.75rem;border:1px solid #D9D9D9;">
+            <small style="display:block;color:#737373;font-weight:400;font-size:12px;margin-bottom:4px;">${r.type}</small>${r.t}
+          </a>`).join('');
+        return `<div style="margin-bottom:1.25rem;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:0.85rem;">
+            <div style="width:24px;height:24px;border-radius:50%;background:#800000;color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;">${i+1}</div>
+            <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#737373;">${sec.title}</div>
+          </div>
+          ${introHTML}${linksHTML}
+        </div>`;
+      }).join('');
+    } else {
+      const trackHTML = domain.skills.map((s) => {
+        return `<div class="skill" onclick="showDetail('${s.id}', event)">
+          <div class="skill-step">${s.id}</div>
+          <div class="skill-name">${s.name}</div>
+        </div>`;
+      }).join('');
+      drawerInner = `<div class="track">${trackHTML}</div>`;
+    }
 
     card.innerHTML = `
       <div class="domain-header" onclick="toggleDomain(${di})">
         <div class="domain-num">${domain.num}</div>
         <div class="domain-name">${domain.domain}</div>
-        <div class="domain-meta">${domain.skills.length} skills</div>
+        <div class="domain-meta">${singleCustom ? '' : domain.skills.length + ' skills'}</div>
         <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none">
           <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
       <div class="drawer">
-        <div class="drawer-inner"><div class="track">${trackHTML}</div></div>
+        <div class="drawer-inner">${drawerInner}</div>
       </div>
     `;
     root.appendChild(card);
@@ -332,19 +396,36 @@ window.showDetail = function(id, e) {
     </div>
   `;
 
+  const mainSections = entry.customSections
+    ? entry.customSections.map((sec, i) => {
+        const introHTML = sec.intro ? `<p style="font-size:15px;line-height:1.75;color:#333;margin-bottom:1rem;">${sec.intro}</p>` : '';
+        const linksHTML = sec.items.map(r => `
+          <a href="${r.url||'#'}" target="_blank" class="resource-link">
+            <small>${r.type}</small>${r.t}
+          </a>`).join('');
+        return `<div class="section">
+          <div class="section-header">
+            <div class="section-number">${i+1}</div>
+            <div class="section-title">${sec.title}</div>
+          </div>
+          ${introHTML}${linksHTML}
+        </div>`;
+      }).join('')
+    : `${sectionHTML(1, 'Start Here', entry.startHere)}
+       ${sectionHTML(2, 'Try It Out', entry.tryItOut)}
+       <div class="section">
+         <div class="section-header">
+           <div class="section-number">3</div>
+           <div class="section-title">Additional Resources</div>
+         </div>
+         ${resourcesHTML}
+       </div>`;
+
   document.getElementById('detail-content').innerHTML = `
     <div style="margin-bottom:0.5rem;margin-top:0.25rem;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--gray-dark);">Other skills in this domain</div>
     <div class="detail-skill-chips">${chips}</div>
     <div class="desc-block">${entry.desc}</div>
-    ${sectionHTML(1, 'Start Here', entry.startHere)}
-    ${sectionHTML(2, 'Try It Out', entry.tryItOut)}
-    <div class="section">
-      <div class="section-header">
-        <div class="section-number">3</div>
-        <div class="section-title">Additional Resources</div>
-      </div>
-      ${resourcesHTML}
-    </div>
+    ${mainSections}
     <div class="skill-nav">
       <button class="nav-btn" onclick="showDetail('${prev ? prev.id : ''}')" ${!prev ? 'disabled' : ''}>
         <svg width="14" height="14" viewBox="0 0 16 16" fill="none" style="flex-shrink:0"><path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
